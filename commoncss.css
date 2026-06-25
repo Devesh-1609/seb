@@ -1,0 +1,203 @@
+html,
+body{
+    overflow-x:hidden;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+}
+
+/* Tablet */
+
+@media(max-width:1024px){
+
+    .navbar{
+        width:100%;
+    }
+
+    #name{
+        font-size:28px;
+    }
+
+    #list1{
+        gap:15px;
+        font-size:18px;
+    }
+
+    .c1234{
+        width:45%;
+        height:auto;
+    }
+
+    .bottom-card{
+        flex-wrap:wrap;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .navbar{
+        width:100%;
+        height:auto;
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo-section{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    #logo{
+        width:50px;
+        height:50px;
+    }
+
+    #name{
+        font-size:18px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    #list1{
+        display:none;
+        position:static;
+        width:100%;
+        flex-direction:column;
+        margin-top:15px;
+        gap:0;
+    }
+
+    #list1.show{
+        display:flex;
+    }
+
+    .nav-item{
+        width:100%;
+        justify-content:center;
+        padding:12px 0;
+        border-bottom:1px solid rgba(255,255,255,.15);
+    }
+
+    .nav-link{
+        justify-content:center;
+        width:100%;
+    }
+
+    /* Footer */
+
+    .bottom-card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .c1234{
+        width:100%;
+        align-items:center;
+        height:auto;
+    }
+
+    /* Events page */
+
+    .cards{
+        flex-direction:column;
+        gap:30px !important;
+    }
+
+    .card{
+        width:95% !important;
+    }
+
+    /* Drishyaa / Dhishaan */
+
+    .card{
+        flex-direction:column;
+    }
+
+    .card-img{
+        flex:auto;
+        width:100%;
+    }
+
+    .drishyaa-heading h1,
+    .dhishaan-heading h1{
+        font-size:45px;
+    }
+
+    .drishyaa-heading p,
+    .dhishaan-heading p{
+        width:90%;
+        font-size:18px;
+    }
+
+    /* Team */
+
+    .faculty-card{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .statement{
+        width:90%;
+        font-size:22px;
+    }
+
+    /* Gallery */
+
+    .memory-card{
+        width:90%;
+    }
+
+    .section-header h2{
+        font-size:2rem;
+    }
+
+    /* Notice */
+
+    .notice-heading{
+        font-size:28px;
+        text-align:center;
+    }
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+    #name{
+        font-size:14px;
+    }
+
+    #logo{
+        width:40px;
+        height:40px;
+    }
+
+    .menu-toggle{
+        font-size:26px;
+    }
+
+    .drishyaa-heading h1,
+    .dhishaan-heading h1{
+        font-size:35px;
+    }
+
+    .events-heading{
+        font-size:30px;
+    }
+
+    .about{
+        font-size:20px;
+    }
+}

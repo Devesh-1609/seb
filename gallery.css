@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background: radial-gradient(circle at center, #111e30 0%, #0B0F19 70%); */
+}
+body{
+    background-color: rgb(242, 249, 255);
+}
+
+
+
+/* gallery section */
+
+.memory-lane {
+    padding: 100px 8%;
+    background: #f8f2e8;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.4),
+        rgba(255,255,255,0.4));
+    min-height: 100vh;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.memory-card {
+    width: 350px;
+    background: white;
+    padding: 15px 15px 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.memory-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.memory-card h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #222;
+}
+
+.memory-card span {
+    display: block;
+    text-align: center;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Random scrapbook effect */
+
+.memory-card:nth-child(1) {
+    transform: rotate(-5deg);
+}
+
+.memory-card:nth-child(2) {
+    transform: rotate(4deg);
+}
+
+.memory-card:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
+.memory-card:nth-child(4) {
+    transform: rotate(6deg);
+}
+
+.memory-card:nth-child(5) {
+    transform: rotate(-4deg);
+}
+
+.memory-card:nth-child(6) {
+    transform: rotate(3deg);
+}
+
+.memory-card:hover {
+    transform: scale(1.08) rotate(0deg);
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+@media (max-width:768px) {
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .memory-card {
+        width: 220px;
+    }
+
+    .memory-card img {
+        height: 220px;
+    }
+}
+
+
+
+
+
+
+/* =========================
+   GLOBAL FIXES
+========================= */
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}

@@ -1,0 +1,596 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background: radial-gradient(circle at center, #111e30 0%, #0B0F19 70%); */
+}
+body{
+    background-color: rgb(242, 249, 255);
+}
+
+
+.VC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.statement{
+    margin-top: 100px;
+    padding: 50px;
+    font-size: 35px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+}
+
+/* .card{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(201, 232, 232);
+}
+
+.card{
+    transition: transform 0.3s ease;
+    
+}
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: -8px 0 15px rgba(0,0,0,0.15),
+                 8px 0 15px rgba(0,0,0,0.15);
+}
+
+
+.detail{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    gap: 3px;
+    background-color: white;
+}
+
+.detail .vc-name{
+    font-weight: bold;
+}
+.vc-image img{
+    width: 200px;
+}
+.vc-image{
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(201, 232, 232);
+} */
+
+
+
+.card{
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: -8px 0 15px rgba(0,0,0,0.15),
+                 8px 0 15px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.image-card{
+    padding: 0;
+    background: white;
+}
+
+.vc-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.detail{
+    background: white;
+    padding: 20px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail .name{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+.detail span:nth-child(2),
+.detail span:nth-child(3){
+    font-size: 16px;
+    color: #555;
+}
+
+.faculty{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 40px;
+
+    gap: 50px;
+}
+
+
+.faculty-heading{
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.faculty-card{
+    display: flex;
+    gap: 100px;
+}
+.line{
+    height: 2px;
+    width: 70%;
+    background-color: #555;
+}
+
+.line{
+    height: 2px;
+    width: 70%;
+
+    background-color: #555;
+
+    margin: 40px auto;
+}
+
+/* incharge section */
+
+
+.incharge-section{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 50px;
+    color: #4090e0;
+    margin-bottom: 40px;
+}
+
+.slider-container{
+    width: 90%;
+    margin: auto;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-track{
+    display: flex;
+    gap: 25px;
+
+    width: max-content;
+
+    padding: 20px 0;
+}
+
+
+.incharge-card{
+    width: 250px;
+    flex-shrink: 0;
+
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.incharge-card:hover{
+    transform: scale(1.03);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+
+.incharge-card h3{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.incharge-card p{
+    color: #666;
+    margin: 5px 0;
+}
+
+.incharge-card img{
+    width: 100%;
+    height: 250px;   /* same height for all images */
+    object-fit: cover;
+    display: block;
+}
+
+
+/* executive section */
+
+
+.executive-section{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 50px;
+    color: #4090e0;
+    margin-bottom: 40px;
+}
+
+.slider-container{
+    width: 90%;
+    margin: auto;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-track{
+    display: flex;
+    gap: 25px;
+
+    width: max-content;
+
+    padding: 20px 0;
+}
+
+
+.executive-card{
+    width: 250px;
+    flex-shrink: 0;
+
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.executive-card:hover{
+    transform: scale(1.03);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+
+.executive-card h3{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.executive-card p{
+    color: #666;
+    margin: 5px 0;
+    margin-bottom: 15px;
+}
+
+.executive-card img{
+    width: 100%;
+    height: 250px;   /* same height for all images */
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/* 2nd year */
+
+
+
+.Sophomore-section{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 50px;
+    color: #4090e0;
+    margin-bottom: 40px;
+}
+
+.slider-container{
+    width: 90%;
+    margin: auto;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-track{
+    display: flex;
+    gap: 25px;
+
+    width: max-content;
+
+    padding: 20px 0;
+}
+
+
+.Sophomore-card{
+    width: 250px;
+    flex-shrink: 0;
+
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+.Sophomore-card:hover{
+    transform: scale(1.03);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+
+.Sophomore-card h3{
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.Sophomore-card p{
+    color: #666;
+    margin: 5px 0;
+    margin-bottom: 15px;
+}
+
+.Sophomore-card img{
+    width: 100%;
+    height: 250px;   /* same height for all images */
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+/* =========================
+   GLOBAL FIXES
+========================= */
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+
+
+
+/* =========================
+   RESPONSIVE NAVBAR
+========================= */
+
+@media screen and (max-width:1024px){
+
+    .navbar{
+        height:auto;
+        padding:15px;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .logo-section{
+        width:100%;
+        justify-content:space-between;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    #name{
+        font-size:18px;
+    }
+
+    #list1{
+        display:none;
+        position:static;
+        width:100%;
+        flex-direction:column;
+        gap:0;
+        margin-top:15px;
+        background:rgba(28,83,83,0.95);
+        border-radius:10px;
+        overflow:hidden;
+    }
+
+    #list1.show{
+        display:flex;
+    }
+
+    .nav-item{
+        width:100%;
+        justify-content:center;
+        padding:14px 0;
+        border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .nav-link{
+        width:100%;
+        justify-content:center;
+    }
+
+    /* VC section */
+
+    .statement{
+        width:90%;
+        font-size:24px;
+        padding:20px;
+        margin-top:120px;
+    }
+
+    .faculty-card{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .card{
+        width:90%;
+        max-width:300px;
+    }
+
+    .faculty-heading{
+        text-align:center;
+    }
+
+    /* Footer */
+
+    .bottom-card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
+
+    .c1234{
+        width:100%;
+        height:auto;
+        align-items:center;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+}
+
+
+
+
+/* Small Mobile */
+
+@media screen and (max-width:480px){
+
+    #logo{
+        width:42px;
+        height:42px;
+    }
+
+    #name{
+        font-size:14px;
+    }
+
+    .statement{
+        font-size:20px;
+    }
+
+    .section-title{
+        font-size:26px;
+    }
+
+    .card{
+        width:95%;
+    }
+
+    .incharge-card,
+    .executive-card,
+    .Sophomore-card{
+        width:220px;
+    }
+}
+
+
+
+@media screen and (max-width:1024px){
+
+    .card{
+        width:250px;
+    }
+
+    .vc-image img{
+        height:280px;
+    }
+
+    .detail{
+        padding:12px 10px;
+    }
+
+    .detail .name{
+        font-size:18px;
+    }
+}   
+
+
+
+@media screen and (max-width:480px){
+
+    .card{
+        width:220px;
+    }
+
+    .vc-image img{
+        height:240px;
+    }
+
+    .detail{
+        padding:10px;
+    }
+
+    .detail .name{
+        font-size:16px;
+    }
+}
