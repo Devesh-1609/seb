@@ -1,9 +1,15 @@
 const menuToggle = document.getElementById("menu-toggle");
 const navList = document.getElementById("list1");
 
-if(menuToggle){
+if (menuToggle) {
     menuToggle.addEventListener("click", () => {
         navList.classList.toggle("show");
+
+        if (navList.classList.contains("show")) {
+            menuToggle.innerHTML = "&times;"; // ✖
+        } else {
+            menuToggle.innerHTML = "☰"; // ☰
+        }
     });
 }
 
@@ -21,6 +27,5 @@ document.getElementById("joinbutton").addEventListener("click", () => {
     }
 });
 
-// const theme = false;
 
-// document.getElementById("theme").addEventListener("click")
+
